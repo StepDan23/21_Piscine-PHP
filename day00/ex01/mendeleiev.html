@@ -2,78 +2,709 @@
 <HTML>
 	<meta charset= "UTF-8">
 	<HEAD>
-		<TITLE>Mendeleev table</TITLE>
+		<TITLE>Periodic table</TITLE>
 		<STYLE>
-			h1 {
+			h2 {
 				text-align: center;
 			}
-			TD {
+			td {
 				border: 1px solid black;
+				height: 50px;
+			}
+			.td_none{
+				border: none;
 			}
 			.weight {
 				text-align: left;
+				font-size: 10px;
 				margin-left: 2px;
 			}
 			.nbr {
 				text-align: right;
-				margin-right: 2px;
+				margin-right: 5px;
+			}
+			.col_lgreen{
+				color: white;
+				background-color: rgb(161,200,97);
+			}
+			.col_green{
+				color: white;
+				background-color: rgb(84,178,97);
+			}
+			.col_pink{
+				color: white;
+				background-color: pink;
+			}
+			.col_yellow{
+				color: white;
+				background-color: rgb(247,208,47);
+			}
+			.col_red{
+				color: white;
+				background-color: rgb(232,111,100);
+			}
+			.col_orange{
+				color: white;
+				background-color: rgb(241,166,97);
+			}
+			.col_grey{
+				color: white;
+				background-color: rgb(171,186,200);
+			}
+			.col_blue{
+				color: white;
+				background-color: rgb(129,155,203);
+			}
+			.col_cyan{
+				color: white;
+				background-color: rgb(137,197,219);
+			}
+			.col_turq{
+				color: white;
+				background-color: rgb(89,189,211);
 			}
 		</STYLE>
 	</HEAD>
 	<BODY>
-		<TABLE style="width: 100%; height: 100%;">
-			<TR>
-				<TD> </TD>
-				<TD>1</TD>
-				<TD>2</TD>
-				<TD>3</TD>
-				<TD>4</TD>
-				<TD>5</TD>
-				<TD>6</TD>
-				<TD>7</TD>
-				<TD>8</TD>
-				<TD>9</TD>
-				<TD>10</TD>
-				<TD>11</TD>
-				<TD>12</TD>
-				<TD>13</TD>
-				<TD>14</TD>
-				<TD>15</TD>
-				<TD>16</TD>
-				<TD>17</TD>
-				<TD>18</TD>
-			</TR>
-			<TR>
-				<TD>1</TD>
-				<TD>
-					<div>
+		<TABLE style="height: 100%; width: 100%;">
+			<caption style="font-size: 30px;">Mendeleev's table</caption>
+	<!-- row 1 -->
+			<tr>
+				<td class="col_lgreen">
 						<p class="nbr">1</p>
-						<h1>H</h1>
+						<h2>H</h2>
 						<p class="weight">1.008</p>
-					</div>
-				</TD>
-			</TR>
-			<TR>
-				<TD>2</TD>
-			</TR>
-			<TR>
-				<TD>3</TD>
-			</TR>
-			<TR>
-				<TD>4</TD>
-			</TR>
-			<TR>
-				<TD>5</TD>
-			</TR>
-			<TR>
-				<TD>6</TD>
-			</TR>
-			<TR>
-				<TD>7</TD>
-			</TR>
-			<TR>
-				<TD>8</TD>
-			</TR>
+				</td>
+				<td colspan="17" class="td_none"></td>
+				<td class="col_pink">
+						<p class="nbr">2</p>
+						<h2>He</h2>
+						<p class="weight">4.01</p>
+				</td>
+			</tr>
+	<!-- row 2 -->
+			<tr>
+				<td class="col_red">
+					<p class="nbr">3</p>
+					<h2>Li</h2>
+					<p class="weight">6.94</p>
+				</td>
+				<td class="col_orange">
+					<p class="nbr">4</p>
+					<h2>Be</h2>
+					<p class="weight">9.01</p>
+				</td>
+				<td colspan="11" class="td_none"></td>
+				<td class="col_green">
+					<p class="nbr">5</p>
+					<h2>B</h2>
+					<p class="weight">10.81</p>
+				</td>
+				<td class="col_lgreen">
+					<p class="nbr">6</p>
+					<h2>C</h2>
+					<p class="weight">12.01</p>
+				</td>
+				<td class="col_lgreen">
+					<p class="nbr">7</p>
+					<h2>N</h2>
+					<p class="weight">14.01</p>
+				</td>
+				<td class="col_lgreen">
+					<p class="nbr">8</p>
+					<h2>O</h2>
+					<p class="weight">15.99</p>
+				</td>
+				<td class="col_yellow">
+					<p class="nbr">9</p>
+					<h2>F</h2>
+					<p class="weight">18.99</p>
+				</td>
+				<td class="col_pink">
+					<p class="nbr">10</p>
+					<h2>Ne</h2>
+					<p class="weight">20.18</p>
+				</td>
+			</tr>
+	<!-- row 3 -->
+			<tr>
+				<td class="col_red">
+					<p class="nbr">11</p>
+					<h2>Na</h2>
+					<p class="weight">22.99</p>
+				</td>
+				<td class="col_orange">
+					<p class="nbr">12</p>
+					<h2>Mg</h2>
+					<p class="weight">24.3</p>
+				</td>
+				<td colspan="11" class="td_none"></td>
+				<td class="col_blue">
+					<p class="nbr">13</p>
+					<h2>Al</h2>
+					<p class="weight">26.98</p>
+				</td>
+				<td class="col_green">
+					<p class="nbr">14</p>
+					<h2>Si</h2>
+					<p class="weight">28.08</p>
+				</td>
+				<td class="col_lgreen">
+					<p class="nbr">15</p>
+					<h2>P</h2>
+					<p class="weight">30.97</p>
+				</td>
+				<td class="col_lgreen">
+					<p class="nbr">16</p>
+					<h2>S</h2>
+					<p class="weight">32.06</p>
+				</td>
+				<td class="col_yellow">
+					<p class="nbr">17</p>
+					<h2>Cl</h2>
+					<p class="weight">35.45</p>
+				</td>
+				<td class="col_pink">
+					<p class="nbr">18</p>
+					<h2>Ar</h2>
+					<p class="weight">39.95</p>
+				</td>
+			</tr>
+	<!-- row 4 -->
+			<tr>
+				<td class="col_red">
+					<p class="nbr">19</p>
+					<h2>K</h2>
+					<p class="weight">39.1</p>
+				</td>
+				<td class="col_orange">
+					<p class="nbr">20</p>
+					<h2>Ca</h2>
+					<p class="weight">40.08</p>
+				</td>
+				<td class="td_none"></td>
+				<td class="col_grey">
+					<p class="nbr">21</p>
+					<h2>Sc</h2>
+					<p class="weight">44.96</p>
+				</td>
+				<td class="col_grey">
+					<p class="nbr">22</p>
+					<h2>Ti</h2>
+					<p class="weight">47.87</p>
+				</td>
+				<td class="col_grey">
+					<p class="nbr">23</p>
+					<h2>V</h2>
+					<p class="weight">50.94</p>
+				</td>
+				<td class="col_grey">
+					<p class="nbr">24</p>
+					<h2>Cr</h2>
+					<p class="weight">51.99</p>
+				</td>
+				<td class="col_grey">
+					<p class="nbr">25</p>
+					<h2>Mn</h2>
+					<p class="weight">54.94</p>
+				</td>
+				<td class="col_grey">
+					<p class="nbr">26</p>
+					<h2>Fe</h2>
+					<p class="weight">55.85</p>
+				</td>
+				<td class="col_grey">
+					<p class="nbr">27</p>
+					<h2>Co</h2>
+					<p class="weight">58.93</p>
+				</td>
+				<td class="col_grey">
+					<p class="nbr">28</p>
+					<h2>Ni</h2>
+					<p class="weight">58.69</p>
+				</td>
+				<td class="col_grey">
+					<p class="nbr">29</p>
+					<h2>Cu</h2>
+					<p class="weight">63.55</p>
+				</td>
+				<td class="col_grey">
+					<p class="nbr">30</p>
+					<h2>Zn</h2>
+					<p class="weight">65.38</p>
+				</td>
+				<td class="col_blue">
+					<p class="nbr">31</p>
+					<h2>Ga</h2>
+					<p class="weight">69.72</p>
+				</td>
+				<td class="col_green">
+					<p class="nbr">32</p>
+					<h2>Ge</h2>
+					<p class="weight">72.63</p>
+				</td>
+				<td class="col_green">
+					<p class="nbr">33</p>
+					<h2>As</h2>
+					<p class="weight">74.92</p>
+				</td>
+				<td class="col_lgreen">
+					<p class="nbr">34</p>
+					<h2>Se</h2>
+					<p class="weight">78.97</p>
+				</td>
+				<td class="col_yellow">
+					<p class="nbr">35</p>
+					<h2>Br</h2>
+					<p class="weight">79.9</p>
+				</td>
+				<td class="col_pink">
+					<p class="nbr">36</p>
+					<h2>Kr</h2>
+					<p class="weight">83.8</p>
+				</td>
+			</tr>
+	<!-- row 5 -->
+			<tr>
+				<td class="col_red">
+					<p class="nbr">37</p>
+					<h2>Rb</h2>
+					<p class="weight">85.47</p>
+				</td>
+				<td class="col_orange">
+					<p class="nbr">38</p>
+					<h2>Sr</h2>
+					<p class="weight">87.62</p>
+				</td>
+				<td class="td_none"></td>
+				<td class="col_grey">
+					<p class="nbr">39</p>
+					<h2>Y</h2>
+					<p class="weight">88.91</p>
+				</td>
+				<td class="col_grey">
+					<p class="nbr">40</p>
+					<h2>Zr</h2>
+					<p class="weight">91.22</p>
+				</td>
+				<td class="col_grey">
+					<p class="nbr">41</p>
+					<h2>Nb</h2>
+					<p class="weight">92.91</p>
+				</td>
+				<td class="col_grey">
+					<p class="nbr">42</p>
+					<h2>Mo</h2>
+					<p class="weight">95.95</p>
+				</td>
+				<td class="col_grey">
+					<p class="nbr">43</p>
+					<h2>Tc</h2>
+					<p class="weight">(97)</p>
+				</td>
+				<td class="col_grey">
+					<p class="nbr">44</p>
+					<h2>Ru</h2>
+					<p class="weight">101.07</p>
+				</td>
+				<td class="col_grey">
+					<p class="nbr">45</p>
+					<h2>Rh</h2>
+					<p class="weight">102.91</p>
+				</td>
+				<td class="col_grey">
+					<p class="nbr">46</p>
+					<h2>Pd</h2>
+					<p class="weight">106.42</p>
+				</td>
+				<td class="col_grey">
+					<p class="nbr">47</p>
+					<h2>Ag</h2>
+					<p class="weight">107.87</p>
+				</td>
+				<td class="col_grey">
+					<p class="nbr">48</p>
+					<h2>Cd</h2>
+					<p class="weight">112.41</p>
+				</td>
+				<td class="col_blue">
+					<p class="nbr">49</p>
+					<h2>In</h2>
+					<p class="weight">114.82</p>
+				</td>
+				<td class="col_blue">
+					<p class="nbr">50</p>
+					<h2>Sn</h2>
+					<p class="weight">118.71</p>
+				</td>
+				<td class="col_green">
+					<p class="nbr">51</p>
+					<h2>Sb</h2>
+					<p class="weight">121.76</p>
+				</td>
+				<td class="col_green">
+					<p class="nbr">52</p>
+					<h2>Te</h2>
+					<p class="weight">127.6</p>
+				</td>
+				<td class="col_yellow">
+					<p class="nbr">53</p>
+					<h2>I</h2>
+					<p class="weight">126.9</p>
+				</td>
+				<td class="col_pink">
+					<p class="nbr">54</p>
+					<h2>Xe</h2>
+					<p class="weight">131.29</p>
+				</td>
+			</tr>
+	<!-- row 6 -->
+			<tr>
+				<td class="col_red">
+					<p class="nbr">55</p>
+					<h2>Cs</h2>
+					<p class="weight">132.91</p>
+				</td>
+				<td class="col_orange">
+					<p class="nbr">56</p>
+					<h2>Ba</h2>
+					<p class="weight">137.33</p>
+				</td>
+				<td colspan="2" class="col_cyan">
+					<p class="nbr">57 - 71</p>
+					<h2>La - Lu</h2>
+					<p class="weight">138.91 - 174.97</p>
+				</td>
+				<td class="col_grey">
+					<p class="nbr">72</p>
+					<h2>Hf</h2>
+					<p class="weight">178.49</p>
+				</td>
+				<td class="col_grey">
+					<p class="nbr">73</p>
+					<h2>Ta</h2>
+					<p class="weight">180.95</p>
+				</td>
+				<td class="col_grey">
+					<p class="nbr">74</p>
+					<h2>W</h2>
+					<p class="weight">183.84</p>
+				</td>
+				<td class="col_grey">
+					<p class="nbr">75</p>
+					<h2>Re</h2>
+					<p class="weight">186.21</p>
+				</td>
+				<td class="col_grey">
+					<p class="nbr">76</p>
+					<h2>Os</h2>
+					<p class="weight">190.23</p>
+				</td>
+				<td class="col_grey">
+					<p class="nbr">77</p>
+					<h2>Ir</h2>
+					<p class="weight">192.08</p>
+				</td>
+				<td class="col_grey">
+					<p class="nbr">78</p>
+					<h2>Pt</h2>
+					<p class="weight">195.08</p>
+				</td>
+				<td class="col_grey">
+					<p class="nbr">79</p>
+					<h2>Au</h2>
+					<p class="weight">196.97</p>
+				</td>
+				<td class="col_grey">
+					<p class="nbr">80</p>
+					<h2>Hg</h2>
+					<p class="weight">200.59</p>
+				</td>
+				<td class="col_blue">
+					<p class="nbr">81</p>
+					<h2>Tl</h2>
+					<p class="weight">204.38</p>
+				</td>
+				<td class="col_blue">
+					<p class="nbr">82</p>
+					<h2>Pb</h2>
+					<p class="weight">207.2</p>
+				</td>
+				<td class="col_blue">
+					<p class="nbr">83</p>
+					<h2>Bi</h2>
+					<p class="weight">208.98</p>
+				</td>
+				<td class="col_blue">
+					<p class="nbr">84</p>
+					<h2>Po</h2>
+					<p class="weight">(209)</p>
+				</td>
+				<td class="col_yellow">
+					<p class="nbr">85</p>
+					<h2>At</h2>
+					<p class="weight">(210)</p>
+				</td>
+				<td class="col_pink">
+					<p class="nbr">86</p>
+					<h2>Rn</h2>
+					<p class="weight">(222)</p>
+				</td>
+			</tr>
+	<!-- row 7 -->
+			<tr>
+				<td class="col_red">
+					<p class="nbr">87</p>
+					<h2>Fr</h2>
+					<p class="weight">(223)</p>
+				</td>
+				<td class="col_orange">
+					<p class="nbr">88</p>
+					<h2>Ra</h2>
+					<p class="weight">(226)</p>
+				</td>
+				<td colspan="2" class="col_turq">
+					<p class="nbr">89 - 103</p>
+					<h2>Ac - Lr</h2>
+					<p class="weight">(227 - 262)</p>
+				</td>
+				<td class="col_grey">
+					<p class="nbr">104</p>
+					<h2>Rf</h2>
+					<p class="weight">(267)</p>
+				</td>
+				<td class="col_grey">
+					<p class="nbr">105</p>
+					<h2>Db</h2>
+					<p class="weight">(270)</p>
+				</td>
+				<td class="col_grey">
+					<p class="nbr">106</p>
+					<h2>Sg</h2>
+					<p class="weight">(269)</p>
+				</td>
+				<td class="col_grey">
+					<p class="nbr">107</p>
+					<h2>Bh</h2>
+					<p class="weight">(270)</p>
+				</td>
+				<td class="col_grey">
+					<p class="nbr">108</p>
+					<h2>Hs</h2>
+					<p class="weight">(270)</p>
+				</td>
+				<td class="col_grey">
+					<p class="nbr">109</p>
+					<h2>Mt</h2>
+					<p class="weight">(278)</p>
+				</td>
+				<td class="col_grey">
+					<p class="nbr">110</p>
+					<h2>Ds</h2>
+					<p class="weight">(281)</p>
+				</td>
+				<td class="col_grey">
+					<p class="nbr">111</p>
+					<h2>Rg</h2>
+					<p class="weight">(281)</p>
+				</td>
+				<td class="col_grey">
+					<p class="nbr">112</p>
+					<h2>Cn</h2>
+					<p class="weight">(285)</p>
+				</td>
+				<td class="col_blue">
+					<p class="nbr">113</p>
+					<h2>Nh</h2>
+					<p class="weight">(286)</p>
+				</td>
+				<td class="col_blue">
+					<p class="nbr">114</p>
+					<h2>Fl</h2>
+					<p class="weight">(289)</p>
+				</td>
+				<td class="col_blue">
+					<p class="nbr">115</p>
+					<h2>Mc</h2>
+					<p class="weight">(289)</p>
+				</td>
+				<td class="col_blue">
+					<p class="nbr">116</p>
+					<h2>Lv</h2>
+					<p class="weight">(293)</p>
+				</td>
+				<td class="col_yellow">
+					<p class="nbr">117</p>
+					<h2>Ts</h2>
+					<p class="weight">(293)</p>
+				</td>
+				<td class="col_pink">
+					<p class="nbr">118</p>
+					<h2>Og</h2>
+					<p class="weight">(294)</p>
+				</td>
+			</tr>
+			<tr>
+				<td class="td_none"></td>
+			</tr>
+	<!-- La - Lu-->
+			<tr>
+				<td colspan="2" class="td_none"></td>
+				<td class="col_cyan">
+					<p class="nbr">57</p>
+					<h2>La</h2>
+					<p class="weight">138.91</p>
+				</td>
+				<td class="col_cyan">
+					<p class="nbr">58</p>
+					<h2>Ce</h2>
+					<p class="weight">140.12</p>
+				</td>
+				<td class="col_cyan">
+					<p class="nbr">59</p>
+					<h2>Pr</h2>
+					<p class="weight">140.91</p>
+				</td>
+				<td class="col_cyan">
+					<p class="nbr">60</p>
+					<h2>Nd</h2>
+					<p class="weight">144.24</p>
+				</td>
+				<td class="col_cyan">
+					<p class="nbr">61</p>
+					<h2>Pm</h2>
+					<p class="weight">(145)</p>
+				</td>
+				<td class="col_cyan">
+					<p class="nbr">62</p>
+					<h2>Sm</h2>
+					<p class="weight">150.36</p>
+				</td>
+				<td class="col_cyan">
+					<p class="nbr">63</p>
+					<h2>Eu</h2>
+					<p class="weight">151.96</p>
+				</td>
+				<td class="col_cyan">
+					<p class="nbr">64</p>
+					<h2>Gd</h2>
+					<p class="weight">157.25</p>
+				</td>
+				<td class="col_cyan">
+					<p class="nbr">65</p>
+					<h2>Tb</h2>
+					<p class="weight">158.93</p>
+				</td>
+				<td class="col_cyan">
+					<p class="nbr">66</p>
+					<h2>Dy</h2>
+					<p class="weight">162.5</p>
+				</td>
+				<td class="col_cyan">
+					<p class="nbr">67</p>
+					<h2>Ho</h2>
+					<p class="weight">164.93</p>
+				</td>
+				<td class="col_cyan">
+					<p class="nbr">68</p>
+					<h2>Er</h2>
+					<p class="weight">167.26</p>
+				</td>
+				<td class="col_cyan">
+					<p class="nbr">69</p>
+					<h2>Tm</h2>
+					<p class="weight">169.93</p>
+				</td>
+				<td class="col_cyan">
+					<p class="nbr">70</p>
+					<h2>Yb</h2>
+					<p class="weight">173.05</p>
+				</td>
+				<td class="col_cyan">
+					<p class="nbr">71</p>
+					<h2>Lu</h2>
+					<p class="weight">174.97</p>
+				</td>
+			</tr>
+	<!-- Ac - Lr-->
+			<tr>
+				<td colspan="2" class="td_none"></td>
+				<td class="col_turq">
+					<p class="nbr">89</p>
+					<h2>Ac</h2>
+					<p class="weight">(227)</p>
+				</td>
+				<td class="col_turq">
+					<p class="nbr">90</p>
+					<h2>Th</h2>
+					<p class="weight">223.04</p>
+				</td>
+				<td class="col_turq">
+					<p class="nbr">91</p>
+					<h2>Pa</h2>
+					<p class="weight">231.04</p>
+				</td>
+				<td class="col_turq">
+					<p class="nbr">92</p>
+					<h2>U</h2>
+					<p class="weight">238.03</p>
+				</td>
+				<td class="col_turq">
+					<p class="nbr">93</p>
+					<h2>Np</h2>
+					<p class="weight">(237)</p>
+				</td>
+				<td class="col_turq">
+					<p class="nbr">94</p>
+					<h2>Pu</h2>
+					<p class="weight">(244)</p>
+				</td>
+				<td class="col_turq">
+					<p class="nbr">95</p>
+					<h2>Am</h2>
+					<p class="weight">(243)</p>
+				</td>
+				<td class="col_turq">
+					<p class="nbr">96</p>
+					<h2>Cm</h2>
+					<p class="weight">(247)</p>
+				</td>
+				<td class="col_turq">
+					<p class="nbr">97</p>
+					<h2>Bk</h2>
+					<p class="weight">(247)</p>
+				</td>
+				<td class="col_turq">
+					<p class="nbr">98</p>
+					<h2>Cf</h2>
+					<p class="weight">(251)</p>
+				</td>
+				<td class="col_turq">
+					<p class="nbr">99</p>
+					<h2>Es</h2>
+					<p class="weight">(252)</p>
+				</td>
+				<td class="col_turq">
+					<p class="nbr">100</p>
+					<h2>Fm</h2>
+					<p class="weight">(257)</p>
+				</td>
+				<td class="col_turq">
+					<p class="nbr">101</p>
+					<h2>Md</h2>
+					<p class="weight">(258)</p>
+				</td>
+				<td class="col_turq">
+					<p class="nbr">102</p>
+					<h2>No</h2>
+					<p class="weight">(259)</p>
+				</td>
+				<td class="col_turq">
+					<p class="nbr">103</p>
+					<h2>Lr</h2>
+					<p class="weight">(262)</p>
+				</td>
+			</tr>
 		</TABLE>
 	</BODY>
 </HTML>
