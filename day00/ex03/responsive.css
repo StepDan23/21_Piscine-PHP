@@ -1,0 +1,71 @@
+caption{
+	font-size: 3vw;
+}
+h2 {
+	text-align: center;
+	font-size: 2vw;
+	margin: 10%;	
+}
+td {
+	border: 1px solid black;
+	height: 5vw;
+	width: 4vw;
+}
+.td_none {
+	border: none;
+}
+.weight {
+	text-align: left;
+	font-size: 0.7vw;
+	margin: 0.1%;
+}
+.nbr {
+	text-align: right;
+	font-size: 1vw;
+	margin: 0.1%;
+}
+.col_lgreen{
+	color: white;
+	background-color: rgb(161,200,97);
+}
+.col_green {
+	color: white;
+	background-color: rgb(84,178,97);
+}
+.col_pink {
+	color: white;
+	background-color: pink;
+}
+.col_yellow {
+	color: white;
+	background-color: rgb(247,208,47);
+}
+.col_red{
+	color: white;
+	background-color: rgb(232,111,100);
+}
+.col_orange{
+	color: white;
+	background-color: rgb(241,166,97);
+}
+.col_grey{
+	color: white;
+	background-color: rgb(171,186,200);
+}
+.col_blue{
+	color: white;
+	background-color: rgb(129,155,203);
+}
+.col_cyan{
+	color: white;
+	background-color: rgb(137,197,219);
+}
+.col_turq{
+	color: white;
+	background-color: rgb(89,189,211);
+}
+#image{
+	width: 8%;
+	margin-left: auto;
+	margin-right: auto;
+}
