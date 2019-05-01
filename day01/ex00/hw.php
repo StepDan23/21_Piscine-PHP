@@ -1,5 +1,4 @@
 #!/usr/bin/php
 <?php
-	$hw = "Hello World";
-	echo $hw."\n";
+	echo $hw."Hello World\n";
 ?>
