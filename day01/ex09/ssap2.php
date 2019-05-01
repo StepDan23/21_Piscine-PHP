@@ -1,6 +1,5 @@
 #! /usr/bin/php
 <?php
-
 function my_cmp($a, $b)
 {
 	if ($a > $b)
@@ -29,6 +28,8 @@ function cmp($str1, $str2)
 	$str2 = str_split($str2);
 	foreach ($str1 as $i => $char1)
 	{
+		if (!$str2[$i])
+			return (1);
 		$prior1 = get_prior($char1);
 		$prior2 = get_prior($str2[$i]);
 		if (!$prior1 && !$prior2)
@@ -43,7 +44,10 @@ function cmp($str1, $str2)
 		else if ($prior1 != $prior2)
 			return ($prior1 - $prior2);
 	}
-	return (-1);
+	$i++;
+	if ($str2[$i])
+		return (-1);
+	return (1);
 }
 
 	if ($argc > 1)
