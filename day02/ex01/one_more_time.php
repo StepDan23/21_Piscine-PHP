@@ -2,7 +2,7 @@
 <?php
 	if ($argc > 1)
 	{
-		if (!preg_match("/(^[a-zA-Z]+) (\d{1,2}) ([a-zA-Zéû]+) (\d{4}) (\d{2}):(\d{2}):(\d{2})$/", $argv[1], $date))
+		if (!preg_match("/(^\w+) (\d{1,2}) (\w+) (\d{4}) (\d{2}):(\d{2}):(\d{2})$/", $argv[1], $date))
 			return (print("Wrong Format\n"));
 		else if (!preg_match("/([lL]undi|[mM]ardi|[mM]ercredi|[jJ]eudi|[vV]endredi|[sS]amedi|[dD]imanche)/", $date[1]))
 			return (print("Wrong Format\n"));
