@@ -1,0 +1,1 @@
+DELETE FROM `db_mmcclure`.`ft_table` LIMIT 5;
