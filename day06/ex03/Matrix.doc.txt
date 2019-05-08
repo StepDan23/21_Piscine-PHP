@@ -1,0 +1,27 @@
+
+<- Matrix ----------------------------------------------------------------------
+The Matrix class handles Matrix.
+
+Our matrices will ALWAYS be four rows and four columns big.
+’preset’: the matrix type to, mandatory. The value must be one of the Class
+constants previoulsy defined.
+
+• To identity matrix ("IDENTITY")
+• To translation matrices ("TRANSLATION")
+• To scale change matrices ("SCALE")
+• To rotation matrices ("Ox, Oy, Oz ROTATION")
+• the projection matrices ("PROJECTION")
+
+prop:
+
+’scale’: the scale factor, mandatory when ’preset’ is worth SCALE.
+’angle’: the rotation angle in radians, mandatory when ’preset’ is worth RX, RY
+or RZ.
+’vtc’: translation vector, mandatory when ’preset’ is worth TRANSLATION.
+’fov’: projection field of view in degrees mandatory when ’preset’ is worth PROJECTION.
+’ratio’: projected image ratio, mandatory when ’preset’ is worth PROJECTION.
+’near’: projection’s near clipping plane mandatory when ’preset’ is worth PROJECTION.
+’far’: projection’s far clipping plane mandatory when ’preset’ is worth PROJECTION.
+
+new Matrix( array( 'opp_id' => prop ) );
+---------------------------------------------------------------------- Matrix ->

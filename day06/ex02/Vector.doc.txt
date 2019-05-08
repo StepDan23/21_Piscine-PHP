@@ -1,0 +1,35 @@
+
+<- Vector ----------------------------------------------------------------------
+The Vector class handles Vector with opposite.
+
+Vector consisting of two vertex:
+
+’dest’: the vector’s destination vertex, mandatory.
+’orig’: the vector’s origin vertex, op
+
+values:
+	• Its x magnitude
+	• Its y magnitude
+	• Its z magnitude
+	• The w coordinate
+
+type of opperation:
+	Vector normalize() : returns a normalized version of the vector. If the vector is
+	already normalized, returns a fresh copy of the vector.
+
+	Vector add( Vector $rhs ) : returns the sum vector of both vectors.
+
+	Vector sub( Vector $rhs ) : returns the difference vector of both vectors.
+
+	Vector opposite() : returns the opposite vector.
+
+	Vector scalarProduct( $k ) : returns the multiplication of the vector with a
+	scalar.
+
+	float dotProduct( Vector $rhs ) : returns the scalar multiplication of both vectors.
+
+	float cos( Vector $rhs ) : returns the angle’sAppendix cosine between both vectors.
+
+	Vector crossProduct( Vector $rhs ) : returns the cross multiplication of both
+	vectors (right-hand mark!)
+---------------------------------------------------------------------- Vector ->

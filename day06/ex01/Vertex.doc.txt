@@ -1,0 +1,12 @@
+
+<- Vertex ----------------------------------------------------------------------
+The Vertex class handles Dot on the 3d plane with color.
+
+values:
+	’x’: x axis coordinate, mandatory.
+	’y’: y axis coordinate, mandatory.
+	’z’: z axis coordinate, mandatory.
+	’w’: optional, by default is worth 1.0.
+	’color’: optional, by default is worth a new instance of the color white.
+all the operation in vector class
+---------------------------------------------------------------------- Vertex ->
