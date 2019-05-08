@@ -1,7 +1,4 @@
 <?php
-	// print_r($_GET);
-	// print_r($_COOKIE);
-
 	switch($_GET['action'])
 	{
 		case ('set');
