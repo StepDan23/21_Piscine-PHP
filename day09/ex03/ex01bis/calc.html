@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="author" content="StepDan">
+		<meta charset="UTF-8">
+		<style>
+			body{
+				background-color: rgb(231, 224, 242);
+			}
+			#calc{
+				margin-top: 100px;
+				margin-left: 30%;
+				background-color: rgb(231, 224, 242)
+			}
+			input{
+				padding: 5px;
+				margin-left: 10px;
+				margin-right: 10px;
+			}
+		</style>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	</head>
+	<body>
+		<form id="calc">
+			<input type="text" name='arg1' placeholder="arg1">
+			<select>
+				<option value="+">+</option>
+				<option value="-">-</option>
+				<option value="*">*</option>
+				<option value="/">/</option>
+				<option value="%">%</option>
+			<input type="text" name="arg2" placeholder="arg2">
+			<input type="submit" value="Try it!" >
+		</form>
+		<script>
+			$(document).ready(function()
+			{
+				setInterval(function(){ alert("Please, use me..."); }, (30 * 1000));
+				var form = $('#calc');
+				form.submit(doOp);
+			});
+
+			function doOp()
+			{
+				var arg1;
+				var opp;
+				var arg2;
+
+				arg1 = $("input[name='arg1']").val();
+				arg2 = $("input[name='arg2']").val();
+				opp = $("select").val();
+				if (arg1.length == 0 || arg2.length == 0 || arg1 < 0 || arg2 < 0 ||
+					!Number.isInteger(+arg1) || !Number.isInteger(+arg2))
+					return (output("Error :("));
+				arg1 = Number(arg1);
+				arg2 = Number(arg2);
+				switch(opp)
+				{
+					case('+'):
+						return (output(arg1 + arg2, arg1 + arg2));
+					case('-'):
+						return (output(arg1 - arg2, arg1 - arg2));
+					case('*'):
+						return (output(arg1 * arg2, arg1 * arg2));
+					case('/'):
+						if (arg2 == 0)
+							return (output("It's over 9000!", arg1 / arg2));
+						return (output(arg1 / arg2, arg1 / arg2));
+					case('%'):
+						if (arg2 == 0)
+							return (output("It's over 9000!", arg1 % arg2));
+						return (output(arg1 % arg2, arg1 % arg2));
+				}
+
+				function output(result, val)
+				{
+					console.log(arg1, opp, arg2, "=", val);
+					window.alert(result);
+				}
+			}
+		</script>
+	</body>
+</html>

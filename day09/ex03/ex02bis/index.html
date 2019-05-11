@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="author" content="StepDan">
+		<meta charset="UTF-8">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+		<script src="todo.js"></script>
+		<style>
+			.li_Elem{
+				width: 400px;
+				margin-top: 10px;
+				margin-left: 50px;
+				padding: 5px;
+				text-indent: 30px;
+				color: whitesmoke;
+				background-color: #333333;
+				border-radius: 10px;
+				cursor: pointer;
+			}
+			h1{
+				margin-left: 30%;
+			}
+			#ft_list{
+				width: 500px;
+				height: 700px;
+				background-color: rgb(83, 83, 83);
+				border-radius: 10px;
+				margin-top: 20px;
+				margin-left: 20%;
+				overflow-y: scroll;
+			}
+			#ft_list::-webkit-scrollbar {
+				width: 10px;
+			}
+			#ft_but{
+				width: 500px;
+				height: 30px;
+				color: whitesmoke;
+				background-color: rgb(83, 83, 83);
+				border-style: none;
+				border-radius: 10px;
+				margin-top: 10px;
+				margin-left: 20%;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>List to do</h1>
+		<div id="ft_list">	</div>
+			<input id="ft_but" type = "submit" value = "New">
+	</body>
+</html>

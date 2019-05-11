@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="author" content="StepDan">
+		<meta charset="UTF-8">
+		<style>
+			#button{
+				height: 200px;
+				width: 200px;
+				background-color: red;
+				border-radius: 50%;
+				margin-top: 300px;
+				margin-left: auto;
+				margin-right: auto;
+				cursor: pointer;
+			}
+		</style>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	</head>
+	<body>
+		<div id="button"></div>
+		<script >
+			var Color = Array('red', 'green', 'blue');
+			var id_col = 0;
+			var size = 200;
+			var button = $("#button");
+
+			button.click(butClick);
+			button.mouseleave(butHowerOut);
+			function butClick() {
+				id_col = (id_col == 2) ? 0 : id_col + 1;
+				size = (size > 410) ? 200 : size + 10;
+				butRender();
+			}
+
+			function butHowerOut() {
+				size = (size <= 200) ? 200 : size - 5;
+				id_col = (id_col == 0) ? 2 : id_col - 1;
+				butRender();
+			}
+
+			function butRender() {
+				button.css("background-color", Color[id_col]);
+				button.css("width", size + "px");
+				button.css("height", size + "px");
+			}
+		</script>
+	</body>
+</html>

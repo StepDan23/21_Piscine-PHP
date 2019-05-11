@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="author" content="StepDan">
+		<meta charset="UTF-8">
+		<style>
+			body{
+				background-color: rgb(231, 224, 242);
+			}
+			#calc{
+				margin-top: 100px;
+				margin-left: 30%;
+				background-color: rgb(231, 224, 242)
+			}
+			input{
+				padding: 5px;
+				margin-left: 10px;
+				margin-right: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<form id="calc" onsubmit="doOp()">
+			<input type="text" name="agr1" placeholder="arg1">
+			<select >
+				<option value="+">+</option>
+				<option value="-">-</option>
+				<option value="*">*</option>
+				<option value="/">/</option>
+				<option value="%">%</option>
+			<input type="text" name="agr2" placeholder="arg2">
+			<input type="submit" value="Try it!" >
+		</form>
+		<script>
+			// setInterval(function(){ alert("Please, use me..."); }, (30 * 1000));
+
+			function doOp()
+			{
+				var form = document.getElementById("calc");
+				var arg1;
+				var opp;
+				var arg2;
+
+				arg1 = form.elements[0].value;
+				arg2 = form.elements[2].value;
+				opp = form.elements[1].value;
+				if (form.elements[0].value.length == 0 || form.elements[2].value.length == 0 ||
+					!Number.isInteger(+arg1) || !Number.isInteger(+arg2) || arg1 < 0 || arg2 < 0)
+					return (output("Error :("));
+				arg1 = Number(arg1);
+				arg2 = Number(arg2);
+				switch(opp)
+				{
+					case('+'):
+						return (output(arg1 + arg2, arg1 + arg2));
+					case('-'):
+						return (output(arg1 - arg2, arg1 - arg2));
+					case('*'):
+						return (output(arg1 * arg2, arg1 * arg2));
+					case('/'):
+						if (arg2 == 0)
+							return (output("It's over 9000!", arg1 / arg2));
+						return (output(arg1 / arg2, arg1 / arg2));
+					case('%'):
+						if (arg2 == 0)
+							return (output("It's over 9000!", arg1 % arg2));
+						return (output(arg1 % arg2, arg1 % arg2));
+				}
+
+				function output(result, val)
+				{
+					console.log(arg1, opp, arg2, "=", val);
+					window.alert(result);
+				}
+			}
+		</script>
+	</body>
+</html>
